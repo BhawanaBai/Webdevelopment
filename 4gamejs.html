@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper </title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="
+    let random_number = Math.random()
+    let computer_move = ''
+    let result = ''
+
+    if (random_number>=0 && random_number<1/3){
+    computer_move = 'Rock'}
+
+    else if (random_number>=1/3 && random_number<2/3){
+    computer_move = 'Paper'}
+
+    else computer_move = 'Scissor'
+
+    if(computer_move == 'Rock'){
+       result = 'tie'
+    }
+    else if (computer_move == 'Paper'){
+       result = 'lose'
+    }
+    else if (computer_move == 'Scissor'){
+       result = 'win'
+    }
+       alert(`Player Move: Rock \ncomputer Move: ${computerMove} \nResult: ${result}`);
+
+    console.log(random_number,'computer Move', computer_move, result );
+
+
+    ">Rock</button>
+    <button onclick="
+    let random_number = Math.random()
+    let computer_move = ''
+    let result = ''
+
+    if (random_number>=0 && random_number<1/3){
+    computer_move = 'Rock'}
+
+    else if (random_number>=1/3 && random_number<2/3){
+    computer_move = 'Paper'}
+
+    else computer_move = 'Scissor'
+
+    if(computer_move == 'Rock'){
+       result = 'tie'
+    }
+    else if (computer_move == 'Paper'){
+       result = 'lose'
+    }
+    else if (computer_move == 'Scissor'){
+       result = 'win'
+    }
+       alert(`Player Move: Rock \ncomputer Move: ${computerMove} \nResult: ${result}`);
+
+    console.log(random_number,'computer Move', computer_move, result );
+
+
+    ">Paper</button>
+    <button>Scissor</button>
+    <script>
+        console.log(Math.random());
+        let randomNumber = Math.random()
+        let computerMove = ''
+        console.log(randomNumber);
+    </script>
+</body>
+</html>

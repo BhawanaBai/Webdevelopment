@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        #color{
+            background-color: blueviolet;
+        }
+        #clr{
+            background-color: orange;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .display{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" class="button" onclick="changeText()">Subscribe</button>
+    <button id="color" onclick="changeColor()">Change color </button>
+    <button id="clr" onclick="button()">Subscribe</button>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur enim consequatur sequi aut, asperiores saepe commodi necessitatibus facilis mollitia molestiae nostrum, blanditiis deserunt autem at laboriosam similique? Doloremque, ea repudiandae.</p>
+    <button id="para-btn" onclick="toggle()">Show/Hide</button>
+    <h1 id="heading" onclick="underline()">Heading</h1>
+    <script>
+        function underline(){
+            let heading = document.getElementById('heading')
+            heading.classList.add("underline", "highlight")
+        }
+            let clr = document.getElementById("clr")
+            function button(){
+                if(clr.innerHTML == "Subscribe"){
+                    clr.innerHTML = "Subscribed"
+                }
+                else{
+                    clr.innerHTML = "Subscribe"
+                }  
+            }
+
+            
+        //document.write("Hello world")
+        console.log(typeof document.body)
+        //document.body.innerHTML = "hello world"
+        document.title = "New Text"
+        console.log(document.title);
+        //document.body.innerHTML = "<button>Click Here</button>"
+
+        let btn = document.getElementById("btn")
+        function changeText(){
+            if(btn.innerHTML == "Subscribe"){
+                btn.innerHTML = "Subscribed"
+                btn.classList.remove('button')
+            }
+            else{
+                btn.innerHTML = "Subscribe"
+            }
+        }
+
+        function changeColor(){
+            let btn = document.getElementById('color')
+            if(btn.style.backgroundColor =="orange"){
+                
+            }
+        }
+        console.log(document.getElementById("btn"))
+         function changeColor(){
+            let btn = document.getElementById('color')
+            if(btn.style.backgroundColor == "blueviolet"){
+                btn.style.backgroundColor = "green"
+            }
+            else{
+                btn.style.backgroundColor = "blueviolet"
+            }
+         }
+         function toggle(){
+            let para = document.getElementById('para')
+            let button = document.getElementById('para-btn')
+            para.classList.toggle('display')
+
+         //  console.log(para)
+         //   if(para.style.display == "none"){
+         //       para.style.display = "block"
+         //   }
+         //   else{
+         //       para.style.display = "none"
+         //   }
+        }
+         toggle()
+         
+         
+        
+        //let btn1 = document.querySelector(".button")
+        //let btn2 = document.querySelector("#btn")
+        //console.log(`btn:`,btn,`btn1`,btn1);
+
+
+    </script>
+</body>
+</html>

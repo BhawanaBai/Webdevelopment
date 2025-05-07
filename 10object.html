@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        
+        let contact = {
+            name : "Qurat",
+            email : "abcgmail.com",
+            ph_number : 34456767,
+            company : "abc",
+            city : "karachi",
+            location : {
+                latitude : 1346,
+                logitude : 3422,
+            },
+            greet(){
+                console.log(`Hello my name is ${this.name} and my email is ${contact.email}`)
+            }
+         }
+         let contact2 = contact
+         contact2.name = "Alex"
+
+         console.log(contact==contact2);
+
+         let object1 = {
+            message : "hello"
+         }
+         let object2 = {
+            message : "hello"
+         }
+         console.log(object1==object2);
+         //console.log()
+         //console.log(contact.location.latitude);
+         //contact.islinkedIn = true
+         //contact.greet() 
+         // contact.name = "Quratulain"
+         //delete contact.location
+         //console.log(contact['name']);
+         //console.log(contact)
+         
+         let a = 5
+         let b = 5
+         console.log(a==b)
+    </script>
+    //create an input field and a button. When the buttton is clicked, save the name entered in localStorage
+    Add another button that display
+</body>
+</html>

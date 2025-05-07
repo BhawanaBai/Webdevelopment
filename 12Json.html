@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON: JavaScript Object Natation</h1>
+
+    <script>
+        let object = {
+            name : "John Doe",
+            age : 70,
+            email : "Qurat@gmail.com",
+            city : "Karachi"
+        }
+        console.log(object);
+        let objStr = JSON.stringify(object)
+        localStorage.setItem("information", JSON.stringify(object))
+        console.log(objStr);
+
+        let obj = JSON.parse(objStr)
+        console.log(obj);
+
+        localStorage.removeItem("object")
+        //localStorage.removeItem("information")
+    </script>
+</body>
+</html>

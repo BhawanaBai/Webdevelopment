@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+      body{
+         background-color: rgb(184, 181, 181);
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         
+      }
+      form{
+         background-color: rgb(208, 186, 158);
+         width:50% ;
+        border-radius:20px ;
+         margin: auto;
+         padding: 20px;
+      }
+      form h1{
+         text-align: center;
+      }
+      form label{
+         display: block;
+         margin-bottom: 10px;
+      }
+      input,select{
+         margin-bottom: 10px;
+         margin-right: 10px;
+         width:100% ;
+         padding: 5px;
+         color: gray;
+         border-radius: 5px;
+         border-bottom: 1px solid gray;
+         border: 0cap;
+      }
+      input[type='radio'], input[type='checkbox']{
+         width: auto;
+      } fieldset{
+         border: none;
+         padding-left: 0%;
+         color: rgb(68, 67, 67);
+      }
+      legend{
+         margin-bottom: 10px;
+      }
+      button{
+         width: 100%;
+         padding: 5px;
+         border-radius: 10px;
+         background-color: blue;
+         color: white;
+      }
+      button:hover{
+         background-color: rgb(64, 64, 183);
+      }
+    </style>
+</head>
+<body>
+   <form action="action.php" enctype="multipart/form-data">
+      <h1>Contact Form</h1>
+    <label for="name">Full name</label>
+    <input type="text" name="fullName" id="name" placeholder="Enter your Name">
+   
+    <label for="Email">Email</label>
+    <input type="email" name="email" id="Email" required placeholder="Enter your Email">
+     
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" maxlength="8" placeholder="Enter your Password">
+     
+     <label for="dob">Date of Birth</label>
+     <input type="date" name="dob" id="dob">
+     
+     <label for="file">Upload CV</label>
+     <input type="file" name="cv" id="file">
+     
+     <label for="age">age</label>
+     <input type="number" name="age" id="age" placeholder="Enter your Age">
+     
+     <label for="time">Time</label>
+     <input type="time" name="time" id="time">
+     
+     <label for="department">Department</label>
+     <input type="text" name="department" id="department" value="Web development" readonly disabled>
+     
+     <fieldset>
+        <legend>Gender</legend>
+        <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
+       
+
+        <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+        
+     </fieldset>
+     <fieldset>
+        <legend>Courses</legend>
+        <label for="webdev"><input type="checkbox" name="courses" id="webdev">Web development</label>
+        <label for="gamedev"><input type="checkbox" name="courses" id="gamedev">Game development</label>
+        <label for="Appdev"><input type="checkbox" name="courses" id="Appdev">App development</label>
+     </fieldset>
+     <label for="city">City</label>
+     <select name="city" id="city">
+      <option value="" selected>Select Your City</option>
+     <option value="Karachi">Karachi</option>
+     <option value="Lahore">Lahore</option>
+     <option value="Rawalpindi">Rawalpindi</option>
+     <option value="Multan">Multan</option>
+      <option value="Islamabad">Islamabad</option>
+   </select> 
+    <button type="submit"  >Submit Form</button>
+   </form> 
+</body>
+</html>

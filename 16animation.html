@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            color: blueviolet;
+            background-color: white;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 2s;
+            /*transition: all 2s 2s ease-in;*/
+        }
+        button:hover{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+        }
+        .container{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            background-color: aqua;
+            transition: all 0.5s;
+        }
+        .container:hover{
+            transform: translate(200px, 200px);
+            /*transform: skewX(-20deg);
+            transform: skewY(20deg);*/
+            transform: skew(-30deg, 20deg);
+            transform: scale(2);
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <button>Click Here</button>
+    <div class="container"></div>
+</body>
+</html>

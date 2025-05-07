@@ -1,0 +1,72 @@
+
+        
+      p{
+        background-color: black;
+        color: white;
+      }
+        h3{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        img{
+            width: 300px;
+    
+        }
+        table{
+            width: 50%;
+            background-color: whitesmoke;
+            border-collapse: collapse;  
+        }
+        .timetable{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        th,td{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+
+
+        .midpic{
+            display: flex;
+            justify-content: center;
+        }
+        form body{
+          background-color: white;
+
+        }
+        form{
+            width: 50%;
+            border-radius: 20px;
+            margin: auto;
+            padding: 20px;
+            background-color: whitesmoke;
+
+        }
+        form label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        input type[radio]{
+            width: 0;
+        }
+        
+        
+        fieldset{
+            border: none;
+            padding: 0%;
+        }
+        legend{
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            
+        }
+

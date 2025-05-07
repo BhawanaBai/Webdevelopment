@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .styling{
+            color: blueviolet;
+            background-color: aliceblue;
+            font-size: large;
+        }
+        .toggle{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="para" onclick="changeStyle()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit dolores adipisci culpa, suscipit debitis dolorum? Molestias, aspernatur aliquam molestiae earum doloribus in beatae iusto minima libero porro. Suscipit, eum.</p>
+    <button onclick="toggleHide()">Show/Hide</button>
+    <script>
+        function changeStyle(){
+        let para = document.getElementById('para')
+        para.classList.add('styling')
+        para.classList.remove('styling')
+        }
+        function toggleHide(){
+         para.classList.toggle('toggle')   
+        }
+    </script>
+</body>
+</html>

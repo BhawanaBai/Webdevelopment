@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        img{
+            width: 300px;
+            height: auto;
+        }
+        video{
+            width: 300px;
+            height: auto;
+        }
+        th,td{
+            border: 2px solid black;
+            text-align: center;
+        }
+        audio{
+            /*filter: invert(1);*/
+            
+        }
+        audio::-webkit-media-controls-panel{
+            background-color: blueviolet;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Midea Type</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >Image</td>
+                <td><img src="Pic2.jpg" alt="Img"></td>
+            </tr>
+            <tr>
+                <td>Video</td>
+                <td>
+                    <video controls autoplay>
+                        <source src="Vdo.mp4">
+                    </video>
+                </td>
+            </tr>
+            <tr>
+                <td>Audio</td>
+                <td>
+                <audio controls autoplay>
+                    <source src="Audio.mp3">
+                </audio>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

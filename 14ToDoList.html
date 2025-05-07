@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .done {
+            text-decoration: line-through;
+            color: rgb(104, 101, 101);
+            font-size: small;
+            font-style: italic;
+        }
+        button{
+            height: 30px;
+            width: 20%;
+            border-radius: 5px;
+            background-color: rgb(111, 116, 116);
+            color: white;
+        }
+        input{
+            height: 30px;
+            width: 50%;
+            border-radius: 5px;
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your task" id="task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", showTask)
+        function addTask() {
+            let input = document.getElementById('task').value
+            if (input == "") {
+                alert(`please enter your task`)
+                return
+            }
+            addToList(input)
+
+            let li = document.createElement('li')
+            li.innerHTML = input
+
+            let tasks = JSON.parse(localStorage.getItem('tasks')) || []
+            task.push(input)
+            localStorage.setItem('task', JSON.stringify(tasks))
+
+
+            // li.addEventListener('click', function (){
+            //     li.classList.toggle('done')
+            // })
+
+
+
+
+            li.classList.add('done')
+            document.getElementById('list').appendChild(li)
+            document.getElementById('task').value = ""
+            console.log(li);
+        }
+        function showTask() {
+            let toDos = JSON.parse(localStorage.getItem('task'))
+            for (let i = 0; i < toDos.length; i++) {
+                addToList(toDos[i])
+            }
+            console.log(toDos);
+
+        }
+        function addToList(text) {
+            let li = document.createElement('li')
+            li.innerHTML = text
+            document.getElementById('list').appendChild(li)
+        }
+
+
+    </script>
+</body>
+
+</html>
